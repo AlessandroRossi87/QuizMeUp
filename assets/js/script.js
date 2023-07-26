@@ -1,4 +1,6 @@
-let questions = [
+ /*** Quiz questions */
+
+const questions = [
     {
         question: "Rosa canina is commonly known by what name?",
         answers: [
@@ -129,7 +131,7 @@ let questions = [
         question: "Kane's last word in the film 'Citizen Kane' was Rosebud. What was Rosebud?",
         answers: [
             { text: "A teddy bear", correct: false },
-            { text: "A venereal disease", correct: false },
+            { text: "A gerbil", correct: false },
             { text: "A sex toy", correct: false },
             { text: "A sled", correct: true },
         ]
@@ -172,12 +174,16 @@ let questions = [
     },
 ];
 
+/*** Defining my variables */
+
 const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
+const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next");
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+/*** Function to start the game */
 
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -185,3 +191,30 @@ function startQuiz(){
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
+/*** Function to display question and answers */
+
+function showQuestion(){
+    resetState();
+    let currentQuestion = question[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("button");
+        answerButtons.appendChild(button);
+    });
+}
+
+function resetState(){
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild)
+    }
+};
+
+/** Display output of question */
+
+startQuiz();
