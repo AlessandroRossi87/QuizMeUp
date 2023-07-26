@@ -46,4 +46,24 @@ body {
     border: 2px solid rgba(13, 1, 30, 0.867);
     padding: 15px;
     margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(51, 17, 100, 0.867);
+    color: white;
+}
+
+#next {
+    background: rgba(51, 17, 100, 0.867);
+    color: white;
+    font-weight: 550;
+    width: 200px;
+    border: 0;
+    padding: 15px;
+    margin: 25px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
 }
