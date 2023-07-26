@@ -8,10 +8,10 @@
 }
 
 body {
-    background:rgba(240, 120, 206, 0.867);
+    background: rgba(240, 120, 206, 0.867);
 }
 
-.game-area{
+.game-area {
     background: rgba(165, 161, 228, 0.867);
     width: 95%;
     max-width: 650px;
@@ -34,13 +34,13 @@ body {
 
 .quiz-area h2 {
     font-size: 20px;
-    color:rgba(51, 17, 100, 0.867);
+    color: rgba(51, 17, 100, 0.867);
     font-weight: 650;
 }
 
 .button {
     background: white;
-    color:rgba(13, 1, 30, 0.867);
+    color: rgba(13, 1, 30, 0.867);
     font-weight: 550;
     width: 95%;
     border: 2px solid rgba(13, 1, 30, 0.867);
@@ -51,9 +51,13 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover:not([disabled]) {
     background: rgba(51, 17, 100, 0.867);
     color: white;
+}
+
+.button:disabled {
+    cursor: no-drop;
 }
 
 #next {
@@ -67,4 +71,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
     display: block;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
 }
