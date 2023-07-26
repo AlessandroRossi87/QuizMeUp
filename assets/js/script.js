@@ -83,7 +83,7 @@ let questions = [
     {
         question: "Which rose is England's national flower?",
         answers: [
-            { text: "Pound Sterling Rose", correct: false },
+            { text: "Pound-Sterling Rose", correct: false },
             { text: "Windsor Rose", correct: false },
             { text: "Brexit Rose", correct: false },
             { text: "Tudor Rose", correct: true },
@@ -137,7 +137,7 @@ let questions = [
     {
         question: "Where in Jordan was poetically described as 'The rose red city half as old as time'?",
         answers: [
-            { text: "By the river of Babylon", correct: false },
+            { text: "Babylon", correct: false },
             { text: "Ammam", correct: false },
             { text: "Barbieland", correct: false },
             { text: "Petra", correct: true },
@@ -162,12 +162,26 @@ let questions = [
         ]
     },
     {
-        question: "Which line precedes 'I never promised you a rose garden' in a 1970s hit?",
+        question: "Which line precedes '...I never promised you a rose garden' in a 1970s hit?",
         answers: [
-            { text: "I'm drinking Bourbon", correct: false },
-            { text: "I beg your pardon", correct: true },
-            { text: "Kiss Dolly Parton", correct: false },
-            { text: "You gimme hardon", correct: false },
+            { text: "I'm drinking Bourbon...", correct: false },
+            { text: "I beg your pardon...", correct: true },
+            { text: "Kiss Dolly Parton...", correct: false },
+            { text: "I just got hardon...", correct: false },
         ]
     },
 ];
+
+const questionElement = document.getElementById("question");
+const answerButton = document.getElementById("answer-buttons");
+const nextButton = document.getElementById("next");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+}
