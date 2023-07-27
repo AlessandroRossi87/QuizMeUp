@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- This is the head -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,24 @@
 </head>
 
 <body>
+    <!--Landing area with rules-->
+    <div class="rules-area">
+        <h2>Why don't you...<h2>
+                <h1>Quiz me up</h1>
+                <h2>...buttercup</h2>
+                <p>A silly quiz about... roses, not buttercups! Can you answer all the questions without giggling nor
+                    selecting any silly answer?</p>
+                <h2>Rulez:</h2>
+                <ol>
+                    <li>You have 15 seconds for each question.</li>
+                    <li>Don't let any silly answer distract you.</li>
+                    <li>You don't know anything about roses? Shame on you!</li>
+                </ol>
+                <div class="info-buttons">
+                    <button class="button" id="exit-button">Get me out of here, silly!</button>
+                    <button class="button" id="start-button">Ok let's do this!</button>
+                </div>
+    </div>
     <!-- Game Area -->
     <div class="game-area">
         <h1>Quiz me Up!</h1>
@@ -25,6 +44,7 @@
                 <button class="button">Answer 3</button>
                 <button class="button">Answer 4</button>
             </div>
+            <span id="timer"></span>
         </div>
         <!-- Next button-->
         <button id="next">Next</button>
