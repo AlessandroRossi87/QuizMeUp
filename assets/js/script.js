@@ -3,13 +3,35 @@
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next");
+const myTimer = document.getElementById("timer");
+const startButton = document.getElementById("start-button");
+const exitButton = document.getElementById("exit-button");
+const rulesArea = document.getElementsByClassName("rules-area");
+const gameArea = document.getElementsByClassName("game-area");
 
 let currentQuestionIndex = 0;
 let score = 0;
 
-/*** Function to start the game */
+/** Function to hide game area */
+
+function hide() {
+    document.gameArea.style.display = "none";
+}
+
+/** Event listener for start button */
+
+startButton.addEventListener("click", startQuiz);
+
+/** Event listener for exit button */
+
+exitButton.addEventListener("click", () => {
+    window.location.replace("https://www.google.com/search?sxsrf=AB5stBihUMdaRNwVD4sITH9n51b1rqiKRA:1690450300665&q=roses&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjdu7mNyq6AAxVcR_EDHVlyB3wQ0pQJegQIDhAB&biw=1440&bih=711&dpr=1");
+});
+
+/**** Function to start the game */
 
 function startQuiz() {
+    document.rulesArea.hidden = true;
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
@@ -44,7 +66,7 @@ function resetState() {
     }
 };
 
-/** Function for selecting answer */
+/** Function for selecting answer and adding score dependant on answer */
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -64,7 +86,7 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-/** Function for score */
+/** Function for score at end game */
 
 function showScore() {
     resetState();
@@ -73,7 +95,7 @@ function showScore() {
     nextButton.style.display = "block";
 }
 
-/** Function for next button */
+/** Function for next button and contains logic to see if quiz is over */
 
 function handleNextButton() {
     currentQuestionIndex++;
@@ -97,3 +119,14 @@ nextButton.addEventListener("click", () => {
 /** Display output of question */
 
 startQuiz();
+
+/** Timer */
+
+/**let myTimer = 15;
+
+function timer() {
+    document.myTimer.innerHTML = sec + "seconds left";
+    if (myTimer < 0) {
+        showScore();
+    }
+} */

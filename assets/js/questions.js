@@ -49,9 +49,9 @@ const questions = [
     {
         question: "A pink blend garden rose, first introduced at the British Embassy in the United States in 1998, was named after who?",
         answers: [
-            { text: "Princess Diana", correct: true },
-            { text: "Sarah Ferguson", correct: false },
             { text: "Camilla Parker Bowles", correct: false },
+            { text: "Sarah Ferguson", correct: false },
+            { text: "Princess Diana", correct: true },
             { text: "Meghan Markle", correct: false },
         ]
     },
