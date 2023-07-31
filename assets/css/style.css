@@ -15,11 +15,11 @@ body {
     background: rgba(240, 120, 206, 0.867);
 }
 
-.rules-area {
+.rules-area .game-area .error-message {
     background: rgba(165, 161, 228, 0.867);
     width: 95%;
     max-width: 650px;
-    margin: 110px auto 0;
+    margin: 110px auto 110px;
     border-radius: 15px;
     padding: 25px;
 }
@@ -29,6 +29,7 @@ body {
     color: rgba(51, 17, 100, 0.867);
     font-weight: 650;
     padding-bottom: 35px;
+    text-align: center;
 }
 
 .rules-area h2 {
@@ -39,12 +40,21 @@ body {
     padding-bottom: 35px;
 }
 
-.game-area {
-    background: rgba(165, 161, 228, 0.867);
-    width: 95%;
-    max-width: 650px;
-    margin: 110px auto 0;
-    border-radius: 15px;
+.rules-area button {
+    background: rgba(51, 17, 100, 0.867);
+    color: white;
+    font-weight: 550;
+    width: 50%;
+    border: 2px solid rgba(13, 1, 30, 0.867);
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.rules-text {
     padding: 25px;
 }
 
@@ -64,19 +74,6 @@ body {
     font-size: 20px;
     color: rgba(51, 17, 100, 0.867);
     font-weight: 650;
-}
-
-.rules-area button {
-    background: rgba(51, 17, 100, 0.867);
-    color: white;
-    font-weight: 550;
-    width: 50%;
-    border: 2px solid rgba(13, 1, 30, 0.867);
-    padding: 15px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .button {
