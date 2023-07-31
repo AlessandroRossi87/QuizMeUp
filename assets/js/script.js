@@ -6,16 +6,24 @@ const nextButton = document.getElementById("next");
 const myTimer = document.getElementById("timer");
 const startButton = document.getElementById("start-button");
 const exitButton = document.getElementById("exit-button");
-const rulesArea = document.getElementsByClassName("rules-area");
-const gameArea = document.getElementsByClassName("game-area");
+const rulesArea = document.querySelector(".rules-area");
+const gameArea = document.querySelector(".game-area");
 
 let currentQuestionIndex = 0;
 let score = 0;
 
+/** Function to show */
+
+function showGameArea() {
+    gameArea.classList.remove("hidden");
+}
+
 /** Function to hide game area */
 
+hide();
+
 function hide() {
-    document.gameArea.style.display = "none";
+    document.querySelector(".game-area").classList.add("hidden");
 }
 
 /** Event listener for start button */
@@ -31,7 +39,7 @@ exitButton.addEventListener("click", () => {
 /**** Function to start the game */
 
 function startQuiz() {
-    document.rulesArea.hidden = true;
+    document.querySelector(".rules-area").classList.add("hidden");
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
