@@ -15,7 +15,25 @@ body {
     background: rgba(240, 120, 206, 0.867);
 }
 
-.rules-area .game-area .error-message {
+.rules-area {
+    background: rgba(165, 161, 228, 0.867);
+    width: 95%;
+    max-width: 650px;
+    margin: 110px auto 110px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.game-area {
+    background: rgba(165, 161, 228, 0.867);
+    width: 95%;
+    max-width: 650px;
+    margin: 110px auto 110px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.error-message {
     background: rgba(165, 161, 228, 0.867);
     width: 95%;
     max-width: 650px;
