@@ -11,6 +11,7 @@ const gameArea = document.querySelector(".game-area");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let timer = 15000;
 
 hideGameArea();
 
@@ -119,15 +120,9 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-/** Display output of question */
-
-/** startQuiz(); */
-
 /** Timer */
 
-/**let myTimer = 15;
-
-function timer() {
+/**function timer() {
     document.myTimer.innerHTML = sec + "seconds left";
     if (myTimer < 0) {
         showScore();

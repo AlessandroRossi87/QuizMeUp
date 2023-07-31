@@ -1,4 +1,4 @@
-# Quiz me up... buttercup!
+# Quiz me up... buttercup
 
 I decided to build a humoristic quiz about my favorite flowers: roses. Roses are one of the most recognizable flowers in the world. I decided to build it in a cheeky way, by adding some absurd questions so that the user can have a laugh about it but also get a hint about which answers are definitely not correct.
 
@@ -24,24 +24,24 @@ WIREFRAME
 ### Existing features
 
 - **Rules Area**
-    - The rules area opens up with the name of the game.
-    - It contains a simple explaination of the quiz.
-    - It has two buttons, one to start the game and another one to quit.
-    - The quit button links to a Google search for pictures of roses.
+- The rules area opens up with the name of the game.
+- It contains a simple explaination of the quiz.
+- It has two buttons, one to start the game and another one to quit.
+- The quit button links to a Google search for pictures of roses.
 
 PICTURE OF RULES AREA
 
 - **Game Area**
-    - The game area contains the title of the quiz.
-    - It shows the number of the question and the question text.
-    - It shows four different alternative answers.
-    - Once the user select the answer a "Next" button appears.
-    - When the user answers to the last question a "Play again" button appears to restart the game.
+- The game area contains the title of the quiz.
+- It shows the number of the question and the question text.
+- It shows four different alternative answers.
+- Once the user select the answer a "Next" button appears.
+- When the user answers to the last question a "Play again" button appears to restart the game.
 
 PICTURE OF GAME AREA
 
 - **404 Error message**
-    - The website features an 404 Error Message page in case the game wouldn't load properly.
+- The website features an 404 Error Message page in case the game wouldn't load properly.
 
 ## Testing
 
@@ -77,6 +77,7 @@ Here is the link to the live website: <https://alessandrorossi87.github.io/quizm
 ## Credits
 
 ### Content
+
 - Questions and right answers for the quiz were taken from [paulsquiz](https://www.paulsquiz.com/other-quizzes-mainmenu-161/202-free-quiz-questions/27-other-trivia-quizzes/2140-roses-quiz-1) and from [freepubquiz](http://www.freepubquiz.co.uk/roses-quiz.html)
 - Wrong answers have been made up by me.
 - Instructions on how to build the quiz were taken from this tutorial on [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
