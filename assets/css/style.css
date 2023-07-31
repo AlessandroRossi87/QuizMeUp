@@ -66,6 +66,19 @@ body {
     font-weight: 650;
 }
 
+.rules-area button {
+    background: rgba(51, 17, 100, 0.867);
+    color: white;
+    font-weight: 550;
+    width: 50%;
+    border: 2px solid rgba(13, 1, 30, 0.867);
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .button {
     background: white;
     color: rgba(13, 1, 30, 0.867);
