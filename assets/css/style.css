@@ -22,6 +22,7 @@ body {
     margin: 110px auto 110px;
     border-radius: 15px;
     padding: 25px;
+    text-align: center;
 }
 
 .game-area {
