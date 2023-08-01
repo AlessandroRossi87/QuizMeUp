@@ -28,7 +28,7 @@ startButton.addEventListener("click", startQuiz);
 /** Event listener for exit button */
 
 exitButton.addEventListener("click", () => {
-    window.location.replace("https://www.google.com/search?sxsrf=AB5stBihUMdaRNwVD4sITH9n51b1rqiKRA:1690450300665&q=roses&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjdu7mNyq6AAxVcR_EDHVlyB3wQ0pQJegQIDhAB&biw=1440&bih=711&dpr=1");
+    window.location.replace("https://www.google.com/search?sxsrf=AB5stBihUMdaRNwVD4sITH9n51b1rqiKRA:1690450300665&q=roses&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjdu7mNyq6AAxVcR_EDHVlyB3wQ0pQJegQIDhAB&biw=1440&bih=711&dpr=1", "_blank");
 });
 
 /**** Function to start the game */
