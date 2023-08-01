@@ -127,8 +127,8 @@ nextButton.addEventListener("click", () => {
 /** Timer */
 
 function timer() {
-    secondsLeft--;
-    if (timervalue < 0) {
-        showScore();
+    document.getElementById("timer").innerHTML = secondsLeft--;
+    if (secondsLeft < 0) {
+        resetState();
     }
 }
