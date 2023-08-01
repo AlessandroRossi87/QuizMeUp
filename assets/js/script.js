@@ -11,7 +11,8 @@ const gameArea = document.querySelector(".game-area");
 
 let currentQuestionIndex = 0;
 let score = 0;
-let timer = 15000;
+let secondsLeft = 15;
+let intervalFunction;
 
 hideGameArea();
 
@@ -61,6 +62,7 @@ function showQuestion() {
         }
         button.addEventListener("click", selectAnswer);
     });
+    intervalFunction = setInterval(timer, 1000);
 }
 
 function resetState() {
@@ -68,6 +70,7 @@ function resetState() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
+    clearInterval(intervalFunction);
 };
 
 /** Function for selecting answer and adding score dependant on answer */
@@ -88,6 +91,7 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+    clearInterval(intervalFunction);
 }
 
 /** Function for score at end game */
@@ -122,9 +126,9 @@ nextButton.addEventListener("click", () => {
 
 /** Timer */
 
-/**function timer() {
-    document.myTimer.innerHTML = sec + "seconds left";
-    if (myTimer < 0) {
+function timer() {
+    secondsLeft--;
+    if (timervalue < 0) {
         showScore();
     }
-} */
+}
