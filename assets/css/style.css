@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Russo+One&family=Sen&display=swap');
 
 /* Class for hide/show rules and game area */
+
 .hidden {
     display: none;
 }
