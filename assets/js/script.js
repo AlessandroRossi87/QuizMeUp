@@ -71,6 +71,7 @@ function resetState() {
         answerButtons.removeChild(answerButtons.firstChild);
     }
     clearInterval(intervalFunction);
+    let secondsLeft = 15;
 };
 
 /** Function for selecting answer and adding score dependant on answer */
@@ -129,6 +130,7 @@ nextButton.addEventListener("click", () => {
 function timer() {
     document.getElementById("timer").innerHTML = secondsLeft--;
     if (secondsLeft < 0) {
-        resetState();
+        selectAnswer();
+        clearInterval(intervalFunction);
     }
 }
