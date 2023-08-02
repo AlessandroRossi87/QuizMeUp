@@ -9,15 +9,15 @@ rgba(165, 161, 228, 0.867)
 rgba(51, 17, 100, 0.867)
 rgba(129, 25, 99, 0.867)
 
-RESPONSIVE MOCKUP
+![Responsive mockup](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/mockup.png)
 
 ## Design process
 
 I decided to go for a very easy and intuitive design with a simple area in the middle of the page that would stay the same both as a landing area with the rules and two buttons, one to start the game and another one to quit the page.
 
-I created an easy wireframe of the game area with Microsoft Word:
+I created an easy wireframe of the game area with Microsoft Word as I decided later to add the rule area and use the show/hide functions with JaavScript:
 
-WIREFRAME
+![Wireframe](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/wireframe.png)
 
 ## Features
 
@@ -29,7 +29,7 @@ WIREFRAME
 - It has two buttons, one to start the game and another one to quit.
 - The quit button links to a Google search for pictures of roses.
 
-PICTURE OF RULES AREA
+![Rules area](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/rulearea.png)
 
 - **Game Area**
 - The game area contains the title of the quiz.
@@ -38,7 +38,7 @@ PICTURE OF RULES AREA
 - Once the user select the answer a "Next" button appears.
 - When the user answers to the last question a "Play again" button appears to restart the game.
 
-PICTURE OF GAME AREA
+![Game area](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/gamearea.png)
 
 - **Questions.js**
 - I put the questions from the quiz in a separate JavaScript file to enhance clarity and order. - This makes it possible to modify the questions or add new ones without risking damaging the script.js file
@@ -46,7 +46,7 @@ PICTURE OF GAME AREA
 - **404 Error message**
 - The website features an 404 Error Message page in case the game wouldn't load properly.
 
-PICTURE OF ERROR 
+![404 Error](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/404error.png)
 
 ## Testing
 
@@ -56,11 +56,13 @@ This webpage has been tested on all major browsers available to me (Chrome, Safa
 
 ### Lighthouse testing
 
-xxx
+The webpage received very high score on all the criteria according to the Lighthouse report.
+
+![Lighthouse](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/lighthouse.png)
 
 ### Fixed bugs
 - At the beginning I was not able to make the timer work as I had only declared a variable for the timer and set it on 15 and then created a function accordingly. 
-![Bug]()
+![Bug](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/timerbug.png)
 
 ### Unfixed bugs
 - I tried repeatedly to make timer reset when time is out and user does not select answer. It was supposed to show the right answer and show the next button. After several tentatives I had to stop because I ran out of time
@@ -68,13 +70,13 @@ xxx
 ### Validator testing
 
 - ## HTML
-  - No errors were found when testing on W3
+  - No errors were found when testing on [W3](https://validator.w3.org/nu/?doc=https%3A%2F%2Falessandrorossi87.github.io%2Fquizmeup%2F)
 
 - ## CSS
-  - No errors were found when testing on W3
+  - No errors were found when testing on [W3](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falessandrorossi87.github.io%2Fquizmeup%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - ## JavaScript
-  - No errors were found when testing on XX
+  - No errors were found when testing on [Wave](https://wave.webaim.org/report#/https://alessandrorossi87.github.io/quizmeup/)
 
 ## Deployment
 
