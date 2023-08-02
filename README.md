@@ -40,6 +40,9 @@ PICTURE OF RULES AREA
 
 PICTURE OF GAME AREA
 
+- **Questions.js**
+- I put the questions from the quiz in a separate JavaScript file to enhance clarity and order. - This makes it possible to modify the questions or add new ones without risking damaging the script.js file
+
 - **404 Error message**
 - The website features an 404 Error Message page in case the game wouldn't load properly.
 

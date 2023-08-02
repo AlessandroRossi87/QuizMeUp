@@ -147,7 +147,7 @@ body {
     .error-message {
         background: rgba(165, 161, 228, 0.867);
         width: 95%;
-        margin: 110px auto 110px;
+        margin: 20px auto 20px;
         border-radius: 15px;
         padding: 25px;
         text-align: center;
