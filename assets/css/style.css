@@ -83,7 +83,7 @@ body {
 
 .quiz-area h2 {
     font-size: 20px;
-    color: rgba(51, 17, 100, 0.867);
+    color: rgba(23, 3, 51, 0.867);
     font-weight: 650;
 }
 
@@ -156,5 +156,10 @@ body {
     .info-buttons {
         display: flex;
         justify-content: center;
+    }
+
+    #question,
+    #answer-buttons {
+        font-size: 15px;
     }
 }
