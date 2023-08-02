@@ -46,6 +46,8 @@ PICTURE OF GAME AREA
 - **404 Error message**
 - The website features an 404 Error Message page in case the game wouldn't load properly.
 
+PICTURE OF ERROR 
+
 ## Testing
 
 ### Browser testing
@@ -55,6 +57,13 @@ This webpage has been tested on all major browsers available to me (Chrome, Safa
 ### Lighthouse testing
 
 xxx
+
+### Fixed bugs
+- At the beginning I was not able to make the timer work as I had only declared a variable for the timer and set it on 15 and then created a function accordingly. 
+![Bug]()
+
+### Unfixed bugs
+- I tried repeatedly to make timer reset when time is out and user does not select answer. It was supposed to show the right answer and show the next button. After several tentatives I had to stop because I ran out of time
 
 ### Validator testing
 

@@ -26,7 +26,7 @@ function hideGameArea() {
 
 startButton.addEventListener("click", startQuiz);
 
-/** Event listener for exit button */
+/** Event listener for exit button, opens in new tab */
 
 exitButton.addEventListener("click", () => {
     window.open("https://www.google.com/search?sxsrf=AB5stBihUMdaRNwVD4sITH9n51b1rqiKRA:1690450300665&q=roses&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjdu7mNyq6AAxVcR_EDHVlyB3wQ0pQJegQIDhAB&biw=1440&bih=711&dpr=1", "_blank");

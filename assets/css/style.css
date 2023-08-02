@@ -92,7 +92,6 @@ body {
 .info-buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .button {
@@ -151,11 +150,6 @@ body {
         border-radius: 15px;
         padding: 25px;
         text-align: center;
-    }
-
-    .info-buttons {
-        display: flex;
-        justify-content: center;
     }
 
     #question,
