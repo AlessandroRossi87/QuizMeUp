@@ -139,3 +139,22 @@ body {
 .incorrect {
     background: red;
 }
+
+@media screen and (max-width: 400px) {
+
+    .rules-area,
+    .game-area,
+    .error-message {
+        background: rgba(165, 161, 228, 0.867);
+        width: 95%;
+        margin: 110px auto 110px;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .info-buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
