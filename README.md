@@ -4,6 +4,8 @@ I decided to build a humoristic quiz about my favorite flowers: roses. Roses are
 
 The colors used as a theme for the website are the following:
 
+![Color pallet](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/colors.png)
+
 rgba(240, 120, 206, 0.867)
 rgba(165, 161, 228, 0.867)
 rgba(51, 17, 100, 0.867)
@@ -98,3 +100,4 @@ Here is the link to the live website: <https://alessandrorossi87.github.io/quizm
 - Instructions on how to build the quiz were taken from this tutorial on [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 - Instructions on how to code the exit button were taken from [stackoverflow](https://stackoverflow.com/questions/57536070/how-to-make-button-open-a-link-in-new-tab-in-javascript)
 - Favicon is from [Flaticon](https://www.flaticon.com/free-icon/rose_1407574)
+- The color pallet was made using [coolors.co](https://coolors.co/)
