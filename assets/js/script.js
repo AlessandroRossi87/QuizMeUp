@@ -125,7 +125,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-/** Timer */
+/** Timer, it should reset if the time is over */
 
 function timer() {
     document.getElementById("timer").innerHTML = secondsLeft--;

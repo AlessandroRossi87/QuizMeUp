@@ -61,7 +61,8 @@ The webpage received very high score on all the criteria according to the Lighth
 ![Lighthouse](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/lighthouse.png)
 
 ### Fixed bugs
-- At the beginning I was not able to make the timer work as I had only declared a variable for the timer and set it on 15 and then created a function accordingly. 
+- At the beginning I was not able to make the timer work as I had only declared a variable for the timer and set it on 15 and then created a function accordingly.
+ 
 ![Bug](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/timerbug.png)
 
 ### Unfixed bugs
