@@ -139,13 +139,8 @@ The webpage received very high score on all the criteria according to the Lighth
 ![Lighthouse](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/lighthouse.png)
 
 ### Fixed bugs
-- At the beginning I was not able to make the timer work as I had only declared a variable for the timer and set it on 15 and then created a function accordingly.
- 
-![Bug](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/timerbug.png)
-
-### Unfixed bugs
-- I tried repeatedly to make timer reset when time is out and user does not select answer. It was supposed to show the right answer and show the next button. After several tentatives I had to stop because I ran out of time
-
+- The countdown timer was not working properly as it didn't stop once it hit zero and continued counting downwards causing a console error at the end. I solved it by creating a new variable handleCountDownZero to deal with the timer onse it hits zero. I updated the timer function making it display a message that the time is up and was able to sove this bug.
+- 
 ### Validator testing
 
 - ## HTML
