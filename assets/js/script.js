@@ -111,13 +111,14 @@ function handleCountDownZero() {
 
 }
 
-/** Function for score at end game */
+/** Function shows score at end of game and hides timer */
 
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+    document.getElementById("timer").style.display= "none";
 }
 
 /** Function for next button and contains logic to see if quiz is over */
