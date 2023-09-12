@@ -149,7 +149,7 @@ function timer() {
     if (secondsLeft >= 0) {
         document.getElementById("timer").innerHTML = secondsLeft--;
     } else {
-        document.getElementById("timer").innerHTML = "You ran out of time!";
+        document.getElementById("timer").innerHTML = "Oh nooo! Your time is up!";
         handleCountDownZero();
         clearInterval(intervalFunction);
     }

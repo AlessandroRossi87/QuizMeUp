@@ -99,5 +99,6 @@ Here is the link to the live website: <https://alessandrorossi87.github.io/quizm
 - Wrong answers have been made up by me.
 - Instructions on how to build the quiz were taken from this tutorial on [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 - Instructions on how to code the exit button were taken from [stackoverflow](https://stackoverflow.com/questions/57536070/how-to-make-button-open-a-link-in-new-tab-in-javascript)
+- Instructions on how to hide timer from score board was taken from [stackoverflow](https://stackoverflow.com/questions/27207854/how-to-show-hide-a-span-using-javascript)
 - Favicon is from [Flaticon](https://www.flaticon.com/free-icon/rose_1407574)
 - The color pallet was made using [coolors.co](https://coolors.co/)
