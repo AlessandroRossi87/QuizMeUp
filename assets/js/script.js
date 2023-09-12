@@ -98,7 +98,7 @@ function selectAnswer(e) {
 /** Function to handle when the timer goes to zero */
 
 function handleCountDownZero() {
-    
+
 }
 
 /** Function for score at end game */
@@ -134,9 +134,11 @@ nextButton.addEventListener("click", () => {
 /** Timer, it should reset if the time is over */
 
 function timer() {
-    document.getElementById("timer").innerHTML = secondsLeft--;
-    if (secondsLeft < 0) {
-        selectedBtn.classList.add("incorrect");
+
+    if (secondsLeft >= 0) {
+        document.getElementById("timer").innerHTML = secondsLeft--;
+    } else {
+        document.getElementById("timer").innerHTML = "You ran out of time!";
         clearInterval(intervalFunction);
     }
 }
