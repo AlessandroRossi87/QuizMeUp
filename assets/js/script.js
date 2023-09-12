@@ -95,9 +95,16 @@ function selectAnswer(e) {
     clearInterval(intervalFunction);
 }
 
-/** Function to handle when the timer goes to zero */
+/** Function to handle when the timer goes to zero. Shows correct and incorrect answers */
 
 function handleCountDownZero() {
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        } else {
+            button.classList.add("incorrect");
+        }
+    })
 
 }
 
@@ -131,7 +138,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-/** Timer, it should reset if the time is over */
+/** Timer, counts down to zero and shows message at the end */
 
 function timer() {
 
