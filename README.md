@@ -2,6 +2,8 @@
 
 I decided to build a humoristic quiz about my favorite flowers: roses. Roses are one of the most recognizable flowers in the world. I decided to build it in a cheeky way, by adding some absurd questions so that the user can have a laugh about it but also get a hint about which answers are definitely not correct.
 
+Here is the link to the live website: <https://alessandrorossi87.github.io/quizmeup/>
+
 The colors used as a theme for the website are the following:
 
 ![Color pallet](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/colors.png)
@@ -48,7 +50,13 @@ I created an easy wireframe of the game area with Microsoft Word as I decided la
 - No point is awarded to the end score.
 - The Next button appears.
 
-![Time is up]()
+![Time is up](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/timeisup.png)
+
+- **End Score**
+- After the last question the game shows the amout of correct answers given.
+- It gives the user the possibility to start the game again.
+
+![End score](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/endscore.png)
 
 - **Questions.js**
 - I put the questions from the quiz in a separate JavaScript file to enhance clarity and order. - This makes it possible to modify the questions or add new ones without risking damaging the script.js file
@@ -63,6 +71,26 @@ I created an easy wireframe of the game area with Microsoft Word as I decided la
 ### Browser testing
 
 This webpage has been tested on all major browsers available to me (Chrome, Safari, Firefox and Edge) and layout and functionality were ensured during all the testings.
+
+### Manual testing
+
+- **The exit button**
+- When the user clicks on the button "Get me out of here, silly!" it should redirect the user to a new tab for Google Images search results for the word "roses. The feature was tested by clicking on the button. The feature acted normally and opened a new tab as expected.
+
+- **The start button**
+- When the user clicks on the button "Ok let's do this" it should start the game by showing the first question. The feature was tested by clicking on the button. The feature acted normally and showed the first question as expected.
+  
+- **The right answer**
+- When the user selects the right answer it should change its background color into green, it should add one point to the final score and the next button appears. The feature was tested by clicking on the right answers. The feature acted normally and the user was able move forward to the next question.
+
+- **The wrong answer**
+- When the user selects the wrong answer it should change its background color into red, change the background color of the right answer into green and the next button appears. The feature was tested by clicking on the wrong answers. The feature acted normally and the user was able to move forward to the next question.
+
+- **Time is up**
+- If the user does not select any answer within the provided time, the countdown goes to zero, a message that the time is up appears, the background color of the answers changes to show both the right one (in green) and the wrong ones (in red) and the next button appears. The feature was tested by letting the time run out. The feature at first did not respond normally, as the timer was not stopping at zero and actually counting upwards in negative numbers. I created a new function to handle the countdown hitting zero in order to address this issue. After that the feature acted normally and the user was able to move forward to the next question.
+
+- **Play again**
+- After the user answers the last question the score is shown and a button to play again appears and restarts the quiz from the beginning. The feature was tested by clicking on the Play Again button. The feature acted normally and the user was able to restart the game from the first question.
 
 ### Lighthouse testing
 
@@ -96,8 +124,6 @@ The website was deployed on GitHub by following these steps:
 - I went to the GitHub depository
 - I clicked on "Settings" and then selected "main" in the "Default branch"
 - I clicked on "Pages" and found the link to the deployed website.
-
-Here is the link to the live website: <https://alessandrorossi87.github.io/quizmeup/>
 
 ## Credits
 
