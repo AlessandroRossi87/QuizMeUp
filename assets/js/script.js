@@ -95,6 +95,12 @@ function selectAnswer(e) {
     clearInterval(intervalFunction);
 }
 
+/** Function to handle when the timer goes to zero */
+
+function handleCountDownZero() {
+    
+}
+
 /** Function for score at end game */
 
 function showScore() {
