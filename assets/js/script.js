@@ -104,7 +104,10 @@ function handleCountDownZero() {
         } else {
             button.classList.add("incorrect");
         }
-    })
+        button.disabled = true;
+    });
+
+    nextButton.style.display = "block";
 
 }
 
@@ -146,6 +149,7 @@ function timer() {
         document.getElementById("timer").innerHTML = secondsLeft--;
     } else {
         document.getElementById("timer").innerHTML = "You ran out of time!";
+        handleCountDownZero();
         clearInterval(intervalFunction);
     }
 }
