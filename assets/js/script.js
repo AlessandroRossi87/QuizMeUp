@@ -37,6 +37,7 @@ exitButton.addEventListener("click", () => {
 function startQuiz() {
     rulesArea.classList.add("hidden");
     gameArea.classList.remove("hidden");
+    myTimer.classList.remove("hidden");
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
@@ -74,7 +75,7 @@ function resetState() {
     secondsLeft = 15;
 };
 
-/** Function for selecting answer and adding score dependant on answer */
+/** Function for selecting answer and adding score depending on answer */
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -118,7 +119,7 @@ function showScore() {
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
-    document.getElementById("timer").style.display= "none";
+    myTimer.classList.add("hidden");
 }
 
 /** Function for next button and contains logic to see if quiz is over */
