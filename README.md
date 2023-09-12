@@ -42,6 +42,14 @@ I created an easy wireframe of the game area with Microsoft Word as I decided la
 
 ![Game area](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/gamearea.png)
 
+- **Time Is Up**
+- If the user does not select an answer within 15 seconds a message that time is up appears.
+- The game shows both correct and incorrect answers.
+- No point is awarded to the end score.
+- The Next button appears.
+
+![Time is up]()
+
 - **Questions.js**
 - I put the questions from the quiz in a separate JavaScript file to enhance clarity and order. - This makes it possible to modify the questions or add new ones without risking damaging the script.js file
 
