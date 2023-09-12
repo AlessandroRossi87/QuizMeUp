@@ -66,6 +66,46 @@ I created an easy wireframe of the game area with Microsoft Word as I decided la
 
 ![404 Error](https://github.com/AlessandroRossi87/quizmeup/blob/main/assets/images/404error.png)
 
+### Functions
+
+- **hideGameArea**
+- This function hides the game area from the index page and adds the hidden class to the element gameArea.
+
+- **startQuiz**
+- This function hides the rule area and displays the game area to start the quiz by calling the showQuestion function and showing the first question.
+
+- **showQuestion**
+- This function shows the question and the answers and starts the countdown timer.
+
+- **resetState**
+- This function resets the question area, shows a new question and its answers, hides the Next button and resets the countdown timer.
+
+- **selectAnswer**
+- This function checks if the answer chosen by the user is right. If it is, it changes the background color to the answer to green, disables the other answer buttons and adds a point to the score. If the selected answer is wrong it changed its background color to red, shows the right answer and displays the Next button.
+
+- **handleCountDownZero**
+- This function is called when the count down timer reaches zero and changes the background color to all answers to show both the right and the wrong ones. It then displays the Next button.
+
+- **showScore**
+- This function shows the final score after the last question and shows the Play Again button.
+
+- **handleNextButton**
+- This function is called when the user clicks on the Next button. If there are more questions it calles the showQuestion function, otherwise it shows the final score.
+
+- **timer**
+- This function shows the countdown timer and when the timer hits zero it calles the handleCountDownZero function.
+
+### Event listeners
+
+- **startButton**
+- Event listener to call the startQuiz function when the user clicks on the button "Ok let's do this".
+
+- **exitButton**
+- Event listener to open a new tab for Google Images search results for the word "roses" when the user clicks on the button "Get me out of here, silly!".
+
+- **nextButton**
+- Event listener to show the next question when the user clicks on the Next button or starts the quiz again when the user clicks on "Play Again".
+
 ## Testing
 
 ### Browser testing
@@ -75,7 +115,7 @@ This webpage has been tested on all major browsers available to me (Chrome, Safa
 ### Manual testing
 
 - **The exit button**
-- When the user clicks on the button "Get me out of here, silly!" it should redirect the user to a new tab for Google Images search results for the word "roses. The feature was tested by clicking on the button. The feature acted normally and opened a new tab as expected.
+- When the user clicks on the button "Get me out of here, silly!" it should redirect the user to a new tab for Google Images search results for the word "roses". The feature was tested by clicking on the button. The feature acted normally and opened a new tab as expected.
 
 - **The start button**
 - When the user clicks on the button "Ok let's do this" it should start the game by showing the first question. The feature was tested by clicking on the button. The feature acted normally and showed the first question as expected.
