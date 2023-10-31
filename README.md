@@ -2,7 +2,7 @@
 
 I decided to build a humoristic quiz about my favorite flowers: roses. Roses are one of the most recognizable flowers in the world. I decided to build it in a cheeky way, by adding some absurd questions so that the user can have a laugh about it but also get a hint about which answers are definitely not correct.
 
-Here is the link to the live website: <https://alessandrorossi87.github.io/quizmeup/>
+Here is the link to the live website: <https://alessandrorossi87.github.io/QuizMeUp/>
 
 The colors used as a theme for the website are the following:
 
